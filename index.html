@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À la ligne, Ink. — Correction, relecture & harmonisation</title>
+<meta name="description" content="À la ligne, Ink. — Correction, relecture, reformulation et harmonisation de vos textes.">
+<style>
+:root{
+  --black:#111;
+  --grey:#5f5f5f;
+  --light:#f7f6f3;
+  --paper:#fff;
+  --line:#dedbd5;
+  --soft:#ece9e4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--black);font-family:Arial,Helvetica,sans-serif;line-height:1.7}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.15}
+h1{font-size:clamp(3.2rem,7vw,6.8rem);margin:.15em 0 .05em;letter-spacing:-.035em}
+h2{font-size:clamp(2.1rem,4vw,3.3rem);margin:0 0 1.2rem}
+h3{font-size:1.5rem;margin:.2rem 0 .5rem}
+p{max-width:760px}
+a{color:inherit}
+.container{width:min(1120px,88vw);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo-text{font-family:Georgia,serif;font-size:1.25rem;text-decoration:none}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:.9rem}
+nav a:hover{text-decoration:underline}
+.hero{padding:70px 0 90px;background:var(--light)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.hero-logo{width:min(560px,100%);height:auto;display:block;margin:15px 0 10px}
+.kicker{text-transform:uppercase;letter-spacing:.2em;font-size:.72rem;color:var(--grey)}
+.hero-lead{font:italic 1.35rem/1.5 Georgia,serif;color:#4d4a46;max-width:680px}
+.btn{display:inline-block;margin-top:20px;padding:13px 22px;background:var(--black);color:#fff;text-decoration:none;font-size:.92rem}
+.hero-note{font-size:.9rem;color:var(--grey);margin-top:16px}
+.section{padding:85px 0;border-top:1px solid var(--line)}
+.section.soft{background:var(--light)}
+.intro{max-width:780px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.card{border-top:1px solid var(--black);padding-top:18px}
+.card p{color:#444}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.profile{width:100%;max-width:390px;display:block;filter:grayscale(100%)}
+.caption{font-size:.85rem;color:var(--grey);margin-top:10px}
+.credentials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}
+.credential{background:var(--light);padding:24px;border:1px solid var(--line);min-height:170px}
+.credential .big{font:2rem Georgia,serif;margin-bottom:8px}
+.testimonial{max-width:880px;margin:auto}
+.quote{font:italic 1.22rem/1.8 Georgia,serif}
+.quote cite{display:block;margin-top:22px;font:normal .92rem Arial,sans-serif;color:var(--grey)}
+.forwho{display:grid;grid-template-columns:repeat(2,1fr);gap:30px}
+.forwho .card{padding:24px;background:var(--light);border-top:0}
+.steps{counter-reset:steps;max-width:850px}
+.step{counter-increment:steps;display:grid;grid-template-columns:55px 1fr;gap:20px;padding:24px 0;border-top:1px solid var(--line)}
+.step:before{content:counter(steps);font:1.5rem Georgia,serif}
+.notice{background:var(--light);border-left:3px solid var(--black);padding:24px;margin-top:35px}
+.faq{max-width:900px}
+details{border-top:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;font:1.15rem Georgia,serif}
+details p{margin:15px 0 0;color:#444}
+.contact{background:var(--black);color:#fff}
+.contact .muted{color:#c9c9c9}
+footer{padding:38px 0;background:#0b0b0b;color:#fff}
+.footer{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.footer a{color:#fff}
+.small{font-size:.86rem;color:#aaa}
+@media(max-width:900px){
+ .hero-grid,.about-grid{grid-template-columns:1fr}
+ .cards{grid-template-columns:repeat(2,1fr)}
+ .credentials{grid-template-columns:1fr}
+ .hero{padding-top:50px}
+}
+@media(max-width:620px){
+ .nav{align-items:flex-start;padding:18px 0;flex-direction:column}
+ nav{gap:10px 15px}
+ .cards,.forwho{grid-template-columns:1fr}
+ .section{padding:65px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo-text" href="#accueil">À la ligne, Ink.</a>
+    <nav aria-label="Navigation principale">
+      <a href="#prestations">Prestations</a>
+      <a href="#apropos">À propos</a>
+      <a href="#pour-qui">Pour qui ?</a>
+      <a href="#methode">Ma façon de travailler</a>
+      <a href="#devis">Devis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">Correction · Relecture · Harmonisation</div>
+      <img class="hero-logo" src="logo.png" alt="À la ligne, Ink. — Lire. Corriger. Transmettre.">
+      <p class="hero-lead">Les mots sont les vôtres. Je veille à ce qu’ils trouvent leur juste place.</p>
+      <p>Correctrice-relectrice indépendante, j’accompagne les auteurs, les professionnels et les particuliers dans la relecture et la correction de leurs textes.</p>
+      <a class="btn" href="#devis">Demander un devis</a>
+      <div class="hero-note">Premières pages corrigées gratuitement avant le devis.</div>
+    </div>
+    <div>
+      <p><strong>Lire avec attention. Corriger avec précision. Respecter la voix de l’auteur.</strong></p>
+      <p>Orthographe, grammaire, syntaxe, ponctuation, typographie ou besoin d’un regard extérieur : chaque texte mérite une lecture minutieuse.</p>
+    </div>
+  </div>
+</section>
+
+<section id="prestations" class="section">
+<div class="container">
+  <h2>Mes prestations</h2>
+  <div class="cards">
+    <article class="card"><h3>Correction</h3><p>Correction orthographique, grammaticale, syntaxique et typographique.</p></article>
+    <article class="card"><h3>Relecture</h3><p>Repérage des répétitions, incohérences, maladresses et problèmes de fluidité.</p></article>
+    <article class="card"><h3>Reformulation</h3><p>Propositions lorsque certaines phrases peuvent gagner en clarté ou en fluidité.</p></article>
+    <article class="card"><h3>Harmonisation</h3><p>Cohérence typographique et éditoriale : titres, citations, capitales, nombres, abréviations, références…</p></article>
+  </div>
+</div>
+</section>
+
+<section id="apropos" class="section soft">
+<div class="container">
+  <div class="about-grid">
+    <div>
+      <img class="profile" src="florie.jpg" alt="Florie, fondatrice d’À la ligne, Ink.">
+      <div class="caption">Florie — À la ligne, Ink.</div>
+    </div>
+    <div>
+      <h2>À propos d’À la ligne, Ink.</h2>
+      <p><strong>À la ligne, Ink. est née d’une envie assez simple : faire de la lecture un métier.</strong></p>
+      <p>J’aime lire, mais j’aime aussi tout ce qui se passe autour du texte : chercher, observer, repérer ce qui ne fonctionne pas, traquer la faute qui s’est glissée entre deux phrases.</p>
+      <p>La correction m’offre exactement ce que je recherchais : du temps passé avec les textes, de la minutie et cette satisfaction particulière de trouver ce que l’on ne voyait plus.</p>
+      <p>Je travaille avec attention et précision, sans perdre de vue l’essentiel : <strong>le texte appartient à son auteur</strong>. Mon rôle n’est pas de le réécrire à sa place, mais de l’aider à aller au bout de ce qu’il cherche à dire.</p>
+      <p>J’accorde donc une grande importance aux remarques et aux reformulations que je peux proposer. Elles doivent être utiles, compréhensibles et toujours respecter l’esprit du texte.</p>
+      <p><strong>À la ligne, Ink., c’est finalement cela : lire attentivement, corriger avec précision et permettre à chaque texte de trouver son lecteur.</strong></p>
+    </div>
+  </div>
+
+  <div style="margin-top:65px">
+    <h2>Formation & expertise</h2>
+    <div class="credentials">
+      <div class="credential"><div class="big">EFLC</div><strong>Diplômée de l’EFLC</strong><p>Une formation spécialisée dans le domaine de la correction.</p></div>
+      <div class="credential"><div class="big">948 / 1000</div><strong>Certification Le Robert</strong><p>Un score attestant d’une solide maîtrise de la langue française.</p></div>
+      <div class="credential"><div class="big">ACLF</div><strong>Membre de l’ACLF</strong><p>Une appartenance professionnelle qui s’inscrit dans la pratique du métier de correctrice.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container testimonial">
+  <h2>Ils en parlent</h2>
+  <div class="quote">« Travailler avec Florie a été un réel plaisir. J’ai été très agréablement surprise de la qualité des retours et de son investissement sur mon manuscrit. Elle a su lire mon travail avec minutie et proposer une correction qui répondait exactement à ce que j’attendais. J’ai particulièrement apprécié la pertinence de ses remarques et ses propositions de reformulations. Elle a compris et respecté l’esprit du texte tout en l’amenant à une qualité professionnelle par ses corrections. Je n’hésiterai pas à lui faire à nouveau confiance pour travailler avec elle sur un prochain manuscrit ! »</div>
+  <cite>— Hélène Koch, autrice de <em>Les Étoiles de Stema</em></cite>
+</div>
+</section>
+
+<section id="pour-qui" class="section">
+<div class="container">
+  <h2>Pour qui ?</h2>
+  <div class="forwho">
+    <article class="card"><h3>✒️ Auteurs et autrices</h3><p>Romans, nouvelles, récits, essais, biographies…</p></article>
+    <article class="card"><h3>🎓 Étudiants et chercheurs</h3><p>Mémoires, thèses, travaux universitaires, rapports de recherche…</p></article>
+    <article class="card"><h3>💼 Professionnels</h3><p>Rapports, dossiers, présentations, documents professionnels…</p></article>
+    <article class="card"><h3>📝 Particuliers et associations</h3><p>Courriers importants, publications associatives, dossiers, communications…</p></article>
+  </div>
+</div>
+</section>
+
+<section id="methode" class="section soft">
+<div class="container">
+  <h2>Ma façon de travailler</h2>
+  <div class="steps">
+    <div class="step"><div><strong>Vous m’envoyez votre texte.</strong><br>Je prends connaissance de son volume, de sa nature et de vos attentes.</div></div>
+    <div class="step"><div><strong>Je corrige gratuitement les premières pages.</strong><br>Vous pouvez ainsi voir concrètement ma façon de travailler avant de vous engager.</div></div>
+    <div class="step"><div><strong>Je vous propose un devis personnalisé.</strong><br>Le tarif dépend notamment du volume et du niveau de correction souhaité.</div></div>
+    <div class="step"><div><strong>Vous validez le devis et versez un acompte.</strong><br>Le travail commence après acceptation du devis et réception de l’acompte convenu.</div></div>
+    <div class="step"><div><strong>Je travaille votre texte.</strong><br>Correction, relecture, reformulation et harmonisation selon la prestation choisie.</div></div>
+    <div class="step"><div><strong>Vous recevez votre texte corrigé.</strong><br>Avec les corrections apportées directement sur le document ou en commentaire (pour les reformulations et remarques).</div></div>
+  </div>
+  <div class="notice"><strong>Les formats et outils</strong><br>Je travaille principalement avec Microsoft Word et le suivi des modifications. Je peux également travailler sur Pages, LibreOffice et PDF.</div>
+</div>
+</section>
+
+<section id="devis" class="section">
+<div class="container">
+  <h2>Demander un devis</h2>
+  <p>Chaque texte est différent. Le temps nécessaire dépend de son volume, de son état et du niveau de correction souhaité.</p>
+  <p>Pour vous permettre de découvrir ma façon de travailler, je corrige gratuitement quelques pages de votre texte avant de vous établir un devis.</p>
+  <a class="btn" href="#contact">Me contacter</a>
+</div>
+</section>
+
+<section class="section soft">
+<div class="container faq">
+  <h2>Questions fréquentes</h2>
+  <details><summary>Combien coûte une correction ?</summary><p>Le tarif dépend du volume du texte et du niveau de correction souhaité. Après avoir pris connaissance de votre texte, je vous adresse un devis personnalisé.</p></details>
+  <details><summary>Puis-je vous envoyer quelques pages avant de m’engager ?</summary><p>Oui. Je corrige gratuitement les premières pages de votre texte afin que vous puissiez découvrir ma façon de travailler avant de vous décider.</p></details>
+  <details><summary>Comment vous envoyer mon texte ?</summary><p>Vous pouvez m’envoyer votre texte par e-mail. Pour établir un devis, quelques pages représentatives peuvent suffire dans un premier temps.</p></details>
+  <details><summary>Sur quels logiciels travaillez-vous ?</summary><p>Je travaille principalement avec Microsoft Word et le suivi des modifications. Je peux également travailler sur Pages, LibreOffice et PDF.</p></details>
+  <details><summary>Combien de temps faut-il pour corriger un texte ?</summary><p>Le délai dépend du volume du texte, de son état et du niveau de correction demandé. Je vous indique le délai prévu dans le devis.</p></details>
+  <details><summary>Comment se passe le règlement ?</summary><p>Un acompte de <strong>40 %</strong> est demandé avant le début de la correction. Le solde est à régler à la livraison du texte corrigé. Le règlement se fait par <strong>virement bancaire</strong>.</p></details>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <h2>Confidentialité & droits d’auteur</h2>
+  <p>Les textes qui me sont confiés restent strictement confidentiels. Ils sont utilisés uniquement dans le cadre de la prestation de correction ou de relecture et ne sont pas communiqués à des tiers sans votre accord.</p>
+  <p><strong>Vous restez pleinement propriétaire de votre texte et de vos droits d’auteur.</strong> Mon intervention porte uniquement sur la correction, la relecture et, lorsque cela est prévu, les propositions de reformulation. Je n’acquiers aucun droit sur votre œuvre.</p>
+</div>
+</section>
+
+<section id="contact" class="section contact">
+<div class="container">
+  <h2>Parlons de votre texte</h2>
+  <p>Vous avez un texte en cours, un manuscrit terminé ou simplement besoin d’un regard extérieur ? Parlons-en.</p>
+  <p class="muted">Vous pouvez m’envoyer quelques pages de votre texte pour un premier échange et une correction d’essai.</p>
+  <p class="muted"><strong>Adresse e-mail à ajouter ici avant la mise en ligne.</strong></p>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer">
+  <div><strong>À la ligne, Ink.</strong><br><span class="small">Lire. Corriger. Transmettre.</span></div>
+  <div class="small">
+    <a href="https://www.linkedin.com/in/florie-malnati-4867a0159" target="_blank" rel="noopener">LinkedIn</a>
+    &nbsp;·&nbsp; Mentions légales &nbsp;·&nbsp; Confidentialité
+  </div>
+</div>
+</footer>
+</body>
+</html>
